@@ -1,0 +1,164 @@
+@media (min-width: 320px) {
+  .list .article {
+    display: block;
+  }
+
+  .article-author {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 475px) {
+  .list .article {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .list .article-author {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .list {
+    max-width: 600px;
+  }
+
+  .list .article-details {
+    max-width: 600px;
+  } 
+}
+
+@media (min-width: 1000px) {
+  .list {
+    margin: auto;
+    max-width: 938px;
+  }
+  
+
+  .list .article-author {
+    position: static;
+  }
+}
+
+.list {
+  margin: auto;
+}
+
+.list .article {
+  margin: 26px 0;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0, 0.15);
+  background: var(--background-color-base);
+}
+
+.article-header {
+  display: flex;
+  align-items: center;
+}
+
+.article-title {
+  margin-right: 13px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.article-like {
+  display: flex;
+  align-items: flex-end;
+}
+
+.article-like * {
+  display: block;
+}
+
+.likes-heart {
+  margin-right: 5px;
+}
+
+.article-tags {
+  margin: 6px 0;
+  color: var(--text-color-secondary);
+}
+
+.article-tags span {
+  padding: 2px 5px 3px;
+  border-radius: 3px;
+  border: 1px solid var(--text-color-secondary);
+}
+
+.article-tags span + span {
+  margin-left: 8px;
+}
+
+.first-tag {
+  color: var(--text-color);
+}
+
+.article-author img {
+  margin-left: 12px;
+}
+
+.author-info {
+  text-align: right;
+}
+
+.list .author-name {
+  font-size: 1.1rem;
+}
+
+.article-date {
+  color: var(--text-color-secondary);
+}
+
+.list .pagination {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 17px;
+  width: 200px;
+  font-size: 0.8rem;
+}
+
+.list .pagination div {
+  padding: 3px 8px;
+}
+
+.list .pagination div + div {
+  margin-left: 5px;
+}
+
+.list .active-page {
+  background: var(--primary-color);
+  color: var(--background-color-base);
+  border-radius: 4px;
+}
+
+.list .arrow {
+  width: 10px;
+  height: 10px;
+  background: url('/back.svg') no-repeat;
+}
+
+.list .arrow.disabled {
+  background: url('/back-disabled.svg') no-repeat;
+}
+
+.list .arrow.forward {
+  background: url('/forward.svg') no-repeat;
+}
+
+.list .arrow.forward.disabled {
+  background: url('/forward-disabled.svg') no-repeat;
+}
+

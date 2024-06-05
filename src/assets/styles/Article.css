@@ -1,0 +1,120 @@
+@media (min-width: 320px) {
+    .article-container .article-author {
+        position: static;
+    }
+    .article-container .article-details {
+        display: block;
+    }
+
+    .article-container .article-info {
+        color: var(--text-color-secondary);
+    }
+
+    .article-container .article-author img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .article-text {
+        margin-top: 25px;
+    }
+
+    .article-container h4 {
+        font-size: 1rem
+    }
+    
+    .article-container h3, h4 {
+        font-weight: normal;
+    }
+
+    .text-header {
+        margin-bottom: 5px;
+        font-size: 1.15rem
+    }
+
+    .article-text div + div {
+        margin-top: 15px;
+    }
+
+    .text-subsection p {
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+
+    .text-subsection ol {
+        margin-left: 26px;
+        line-height: 20px;
+    }
+
+}
+
+@media (min-width: 475px) {
+    .article-container {
+        position: relative;
+    }
+
+    .article-container .article-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .article-container .article-author {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .article-container .author-name {
+        font-size: 1.1rem;
+    }
+
+    .article-container .article-author img {
+        width: auto;
+        height: auto;
+    }
+
+    .article-container h4 {
+        font-size: 1.1rem
+    }
+
+    .text-header {
+        font-size: 1.25rem
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .article-container {
+        max-width: 600px;
+        box-shadow: 0 4px 12px rgba(0,0,0, 0.15);
+    }
+
+    .article-container .article-info {
+        max-width: 600px;
+    } 
+}
+
+@media (min-width: 1000px) {
+    .article-container {
+        
+        max-width: 938px;
+    }
+
+    .article-container .article-author {
+        position: static;
+    }
+}
+
+.article-container {
+    margin: 26px auto ;
+    padding: 16px 16px 64px;
+    background: var(--background-color-base);
+    
+}
+
+
+
